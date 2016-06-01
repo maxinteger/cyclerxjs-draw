@@ -1,0 +1,51 @@
+canvas{
+    border: 1px solid gray;
+    margin: 5px auto;
+    display: block;
+    cursor: crosshair;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display:inline-block;
+    border-radius: 3px;
+    margin: 2px;
+}
+.color-selector{
+    border: 1px solid gray;
+    width: 1em;
+    height: 1em;
+}
+.selected-colors{
+    width: 1.5em;
+    position: relative;
+}
+.selected-colors .item{
+    border: 1px solid gray;
+    position: absolute;
+    top: -.2em;
+    left: -.2em;
+    width: .8em;
+    height: .8em;
+    background: #000;
+}
+.selected-colors .item.fg{
+    top: .2em;
+    left: .2em;
+    background: #fff;
+}
+
+.tool{
+    outline: none;
+    border: 1px solid darkgray;
+}
+.tool.active {
+    border: 1px solid red;
+}
