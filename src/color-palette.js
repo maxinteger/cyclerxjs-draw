@@ -6,7 +6,7 @@ export const colorSelector = (DOM, colors) => {
         .select('li.color-selector')
         .events('mouseup')
         .map( evt => ({ [evt.button <= 1 ? 'bg': 'fg']: evt.target.dataset.color }))
-        .startWith({color: {fg: '#ffffff', bg: '#000000' }})
+        .startWith( {fg: '#ffffff', bg: '#000000' } )
         .scan(merge);
 
     return {
